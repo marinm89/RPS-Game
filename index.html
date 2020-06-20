@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <div class="Heading row">
+        <div class="col-6">
+            <ul class="list">
+                <li class="list-items">ROCK</li>
+                <li class="list-items">PAPER</li>
+                <li class="list-items">SCISSORS</li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <div class="score-card">
+                <div class="score-head">SCORE</div>
+                <div id="score-num" class="score-num"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="middle-section" id="before-choise">
+        <div class="choice-not-made-yet">
+            <img class="imgs rock-img" onclick="Clicked('rock')" src="images/icon-rock.svg" alt="rock">
+            <img class="imgs paper-img" onclick="Clicked('paper')" src="images/icon-paper.svg" alt="paper">
+            <img class="imgs scissors-img" onclick="Clicked('scissors')" src="images/icon-scissors.svg" alt="scissors">
+        </div>
+        <button id="myBtn" type="button" class="btn btn-outline-light rules-btn">RULES</button>
+    </div>
+
+<!--********************************************************-->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class="img-rules" src="images/image-rules.svg" alt="RULES">
+  </div>
+</div>
+
+<!--********************************************************-->
+
+
+    <div id="after-choice" class="choice-made row">
+        <div id="userSELECTS" class="col-6">
+            <h1>YOUR CHOICE</h1>
+            <img id="imgsUser" class="img1" src="" alt="YourChoice">
+        </div>
+        <div id="result" class="col-4">
+            <h3 id="result-h3">You Win You Lose</h3>
+         <button type="button" onclick="playAgain()" class="btn btn-light btn-PlayAgain btn-PlayAgain">PLAY AGAIN</button>
+        </div>
+        <div id="houseSELECTS" class="col-6">
+            <h1>COMPUTER CHOICE</h1>
+            <img id="imgsHouse" class="img1 " src="" alt="">
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
+        Created by <a href="https://github.com/marinm89" target="_blank">Marin Mrvoš</a>
+    </div>
+</footer>
+<script src="app.js"></script>
+</html>

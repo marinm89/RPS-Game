@@ -1,0 +1,376 @@
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: rgb(31, 55, 86);
+    background: -moz-radial-gradient(circle, rgba(31, 55, 86, 1) 0%, rgba(20, 21, 57, 1) 93%);
+    background: -webkit-radial-gradient(circle, rgba(31, 55, 86, 1) 0%, rgba(20, 21, 57, 1) 93%);
+    background: radial-gradient(circle, rgba(31, 55, 86, 1) 0%, rgba(20, 21, 57, 1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f3756", endColorstr="#141539", GradientType=1);
+
+}
+
+
+.Heading {
+    color: white;
+    width: 46%;
+    margin: 3% auto 2%;
+    border: solid 2px;
+    border-color: hsl(217, 16%, 45%);
+    border-radius: 12px;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0;
+}
+
+.list-items {
+    line-height: 1.8rem;
+}
+
+.score-card {
+    width: 120px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    line-height: normal;
+}
+
+.score-card .col-12 {
+    padding: 0;
+}
+
+.score-head {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 600;
+    color: hsl(229, 64%, 46%);
+}
+
+.score-num {
+    color: hsl(229, 25%, 31%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+
+@media (max-width: 1000px) {
+    .Heading {
+        color: white;
+        width: 70%;
+        margin: 5% auto 8%;
+        border: solid 2px;
+        border-color: hsl(217, 16%, 45%);
+        border-radius: 12px;
+    }
+
+    .list {
+        list-style-type: none;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 18px;
+        margin: 0;
+    }
+
+    .score-card {
+        width: 80px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        line-height: normal;
+    }
+
+    .score-head {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10%;
+        font-weight: 600;
+        color: hsl(229, 64%, 46%);
+    }
+
+    .score-num {
+        color: hsl(229, 25%, 31%);
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        padding-bottom: 10%;
+    }
+}
+
+
+.middle-section {
+    background: url(../images/bg-triangle.svg) no-repeat center;
+    background-size: 200px 200px;
+    width: 40%;
+    height: 280px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.imgs {
+    position: absolute;
+    padding: 34px;
+    border: solid 22px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.paper-img {
+    top: 32%;
+    left: 36%;
+    border-color: hsl(230, 89%, 65%);
+}
+
+.scissors-img {
+    top: 32%;
+    right: 36%;
+    text-shadow: 2px 2px;
+    border-color: hsl(40, 84%, 53%);
+}
+
+.rock-img {
+    left: 44%;
+    bottom: 17%;
+    border-color: hsl(349, 70%, 56%);
+}
+
+.rules-btn {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 0.5% 1.5%;
+}
+
+@media (max-width: 1000px) {
+    .imgs {
+        position: absolute;
+        padding: 18px;
+        border: solid 12px;
+        border-radius: 50%;
+        width: 100px;
+        background-color: white;
+    }
+
+    .paper-img {
+        top: 28%;
+        left: 24%;
+        border-color: hsl(230, 89%, 65%);
+    }
+
+    .scissors-img {
+        top: 28%;
+        right: 24%;
+        border-color: hsl(40, 84%, 53%);
+    }
+
+    .rock-img {
+        left: 40%;
+        bottom: 32%;
+        border-color: hsl(349, 70%, 56%);
+    }
+
+    .rules-btn {
+        position: absolute;
+        bottom: 15%;
+        right: 42%;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        padding: 0.5% 1.5%;
+    }
+}
+
+.choice-made {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+#after-choice h1 {
+    color: white;
+    margin: 10% auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.img1 {
+    padding: 42px;
+    border: solid 24px;
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+}
+
+.img-paper {
+    border-color: hsl(230, 89%, 65%);
+}
+
+.img-scissors {
+    border-color: hsl(40, 84%, 53%);
+}
+
+.img-rock {
+    border-color: hsl(349, 70%, 56%);
+}
+
+#result-h3 {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.btn-PlayAgain {
+    color: hsl(229, 25%, 31%);
+    font-size: 16px;
+    padding: 3% 22%;
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    .choice-made {
+        width: 80%;
+    }
+
+    #after-choice h1 {
+        color: white;
+        margin: 10% auto;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        font-weight: 600;
+    }
+
+    .img1 {
+        padding: 20px;
+        border: solid 16px;
+        border-radius: 50%;
+        background-color: white;
+        width: 120px;
+    }
+
+    .img-paper {
+        border-color: hsl(230, 89%, 65%);
+    }
+
+    .img-scissors {
+        border-color: hsl(40, 84%, 53%);
+    }
+
+    .img-rock {
+        border-color: hsl(349, 70%, 56%);
+    }
+
+    #result-h3 {
+        color: white;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 40px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+
+    .btn-PlayAgain {
+        color: hsl(229, 25%, 31%);
+        font-size: 16px;
+        padding: 3% 22%;
+        font-weight: 600;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.img-rules {
+    width: 90%;
+}
+
+@media (max-width: 1000px) {
+    .modal-content {
+        width: 70%;
+    }
+}
+/*/*/
+
+/* Close Button */
+.close {
+    position: absolute;
+    right: 7%;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*End of close btn*/
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    margin-top: 300px;
+}
+
